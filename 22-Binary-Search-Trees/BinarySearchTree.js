@@ -40,4 +40,20 @@ class BinarySearchTree {
       }
     }
   }
+
+  contains(val) {
+    if (this.root === null) return false;
+    let current = this.root,
+      found = false;
+    while (current && !found) {
+      if (val < current.value) {
+        current = current.left;
+      } else if (val > current.value) {
+        current = current.right;
+      } else {
+        return true;
+      }
+    }
+    return false;
+  }
 }
