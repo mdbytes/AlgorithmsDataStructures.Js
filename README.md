@@ -1,4 +1,4 @@
-#AlgorithmsDataStructures.Js
+# AlgorithmsDataStructures.Js
 
 <p>A collection of resources for algorithms and data structures using JavaScript.</p>
 
