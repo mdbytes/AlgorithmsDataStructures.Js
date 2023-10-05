@@ -12,4 +12,4 @@
 
 <hr>
 
-IMPORTANT: Before using or relying on the code in this repository, please read the accompanying LICENSE document carefully. While the software here is offered under open source license, it is not fit for all purposes such as plagiarism on the part of any user.
+IMPORTANT: Before using or relying on the code in this repository, please read the accompanying LICENSE document carefully. While the software here is offered under open source license, it is not fit for all purposes, such as plagiarism where prohibited by academic standards.
