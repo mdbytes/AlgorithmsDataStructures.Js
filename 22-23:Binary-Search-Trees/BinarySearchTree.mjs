@@ -86,7 +86,7 @@ export class BinarySearchTree {
 
     while (queue.length) {
       node = queue.shift();
-      data.push(node);
+      data.push(node.val);
       if (node.left) {
         queue.push(node.left);
       }
@@ -102,12 +102,40 @@ export class BinarySearchTree {
     var current = this.root;
 
     function traverse(node) {
-      data.push(node);
+      data.push(node.val);
       if (node.left) traverse(node.left);
       if (node.right) traverse(node.right);
     }
 
     traverse(current);
+
+    return data;
+  }
+
+  depthFirstSearchPostOrder() {
+    var data = [];
+
+    function traverse(node) {
+      if (node.left) traverse(node.left);
+      if (node.right) traverse(node.right);
+      data.push(node.val);
+    }
+
+    traverse(this.root);
+
+    return data;
+  }
+
+  depthFirstSearchInOrder() {
+    var data = [];
+
+    function traverse(node) {
+      if (node.left) traverse(node.left);
+      data.push(node.val);
+      if (node.right) traverse(node.right);
+    }
+
+    traverse(this.root);
 
     return data;
   }

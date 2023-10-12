@@ -9,6 +9,14 @@ tree.insert(3);
 tree.insert(8);
 tree.insert(20);
 
-tree.breadthFirstSearch();
+console.log('Breadth First Search');
+console.log(tree.breadthFirstSearch());
 
-tree.depthFirstSearchPreOrder();
+console.log('Depth First Search PreOrder');
+console.log(tree.depthFirstSearchPreOrder());
+
+console.log('Depth First Search PostOrder');
+console.log(tree.depthFirstSearchPostOrder());
+
+console.log('Depth First Search InOrder');
+console.log(tree.depthFirstSearchInOrder());
